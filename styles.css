@@ -1,3 +1,35 @@
-h1 {
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
 
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+.logo {
+    color: #f9faf8;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 24px;
+}
+
+a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    padding: 0px 16px 0px 0px;
+    gap: 16px;
 }
