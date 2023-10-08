@@ -1,13 +1,23 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
     display: flex;
     flex-direction: column;
 }
 
-header {
+header, .hero {
     display: flex;
-    align-items: center;
+    justify-content: center;
     background-color: #1F2937;
+    padding: 0px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    padding: 0px 24px;
 }
 
 a {
@@ -37,20 +47,19 @@ p {
     color: #f9faf8;
     font-size: 20px;
     font-weight: 600;
-    padding: 24px;
 }
 
 .nav-links {
     display: flex;
     margin-left: auto;
-    padding: 0px 16px 0px 0px;
+    padding: 0px 0px 0px 0px;
     gap: 16px;
 }
 
-.hero {
+.hero-content {
     display: flex;
     justify-content: center;
-    background-color: #1F2937;
+    width: 1280px;
     padding: 48px 24px;
 }
 
