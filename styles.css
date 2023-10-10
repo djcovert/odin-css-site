@@ -1,3 +1,4 @@
+/* Page local styles */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
@@ -5,22 +6,7 @@ body {
     flex-direction: column;
 }
 
-header, .hero {
-    display: flex;
-    justify-content: center;
-    background-color: #1F2937;
-    padding: 0px;
-}
-
-.header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1280px;
-    padding: 0px 24px;
-}
-
-a {
+a, footer {
     color: #e5e7eb;
     text-decoration: none;
     font-size: 18px;
@@ -43,6 +29,46 @@ p {
     font-size: 18px;
 }
 
+/* Buttons */
+.button-primary {
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    padding: 8px 32px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Page structure and backgrounds */
+header, .hero, footer, .cards, .cta, .testimonial {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+header, .hero, footer {
+    background-color: #1F2937;
+}
+
+.cards, .cta {
+    background-color: white;
+}
+
+.testimonial {
+    background-color: #e5e7eb ;
+}
+
+
+/* Navigation and header */
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    padding: 0px 24px;
+}
+
 .logo {
     color: #f9faf8;
     font-size: 20px;
@@ -56,11 +82,12 @@ p {
     gap: 16px;
 }
 
+/* Hero banner */
 .hero-content {
     display: flex;
     justify-content: center;
     width: 1280px;
-    padding: 48px 24px;
+    padding: 64px 32px;
 }
 
 .hero-left {
@@ -70,16 +97,55 @@ p {
     padding-right: 32px;
 }
 
-.button-primary {
-    background-color: #3882F6;
-    color: white;
-    font-weight: bold;
-    width: fit-content;
-    padding: 8px 32px;
-    border-radius: 4px;
-    border: none;
-}
-
 .hero-image {
     width: 50%;
+}
+
+/* Cards */
+.cards-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 64px 24px;
+}
+
+.four-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 8px;
+}
+
+.card-image {
+    border-radius: 8px;
+}
+
+/* Testimonial */
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 750px;
+    padding: 96px 24px;
+}
+
+.testimonial-text {
+    color: #1F2937;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.testimonial-person {
+    text-align: right;
+    font-weight: bold;
 }
