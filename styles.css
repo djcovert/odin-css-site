@@ -1,6 +1,6 @@
 /* Page local styles */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -35,9 +35,21 @@ p {
     color: white;
     font-weight: bold;
     width: fit-content;
+    height: 48px;
     padding: 8px 32px;
     border-radius: 4px;
     border: none;
+}
+
+.button-secondary {
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    height: 48px;
+    padding: 8px 32px;
+    border-radius: 4px;
+    border: 1px solid white;
 }
 
 /* Page structure and backgrounds */
@@ -72,7 +84,7 @@ header, .hero, footer {
 .logo {
     color: #f9faf8;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -148,4 +160,33 @@ header, .hero, footer {
 .testimonial-person {
     text-align: right;
     font-weight: bold;
+}
+
+/* CTA */
+.cta {
+    display: flex;
+    padding: 64px 32px;
+}
+
+.cta-content {
+    display: flex;
+    width: 960px;
+    background-color: #3882f6;
+    padding: 32px 96px;
+    border-radius: 8px;
+    color: white;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cta-title {
+    font-weight: bold;
+}
+
+.button-secondary {
+    margin-left: auto;
 }
